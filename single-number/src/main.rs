@@ -4,7 +4,8 @@ struct Solution;
 
 impl Solution {
     pub fn single_number(nums: Vec<i32>) -> i32 {
-        let mut h: HashSet<i32> = HashSet::new();
+        let v = Vec::with_capacity(nums.len());
+
 
         for i in 0..nums.len() {
             let val = nums[i];
