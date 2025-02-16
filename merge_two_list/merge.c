@@ -39,7 +39,7 @@ static void print_list(struct root *root)
 	printf("\n");
 }
 
-struct root *merge_two_list(struct root *_l1, struct root *_r1)
+static struct root *merge_two_list(struct root *_l1, struct root *_r1)
 {
 	struct node *r1, *l1;
 	struct root *new_root;
